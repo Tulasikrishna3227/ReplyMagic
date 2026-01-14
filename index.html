@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReplyGenius - AI Review Response Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="logo">⭐ ReplyGenius</div>
+        <div class="nav-links">
+            <a href="#pricing">Pricing</a>
+            <button class="btn-login">Login</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Reply to Reviews in Seconds</h1>
+        <p>AI-powered professional responses for your business reviews</p>
+    </section>
+
+    <!-- Main Tool -->
+    <section class="tool-container">
+        <div class="tool-box">
+            
+            <!-- Input Section -->
+            <div class="input-section">
+                <label>Paste Customer Review:</label>
+                <textarea id="reviewInput" placeholder="Example: The food was cold and service was slow. Very disappointed with my experience."></textarea>
+            </div>
+
+            <!-- Options -->
+            <div class="options">
+                <div class="option-group">
+                    <label>Business Type:</label>
+                    <select id="businessType">
+                        <option value="restaurant">Restaurant</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="shop">Retail Shop</option>
+                        <option value="salon">Salon/Spa</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label>Tone:</label>
+                    <select id="tone">
+                        <option value="professional">Professional</option>
+                        <option value="friendly">Friendly</option>
+                        <option value="apologetic">Apologetic</option>
+                        <option value="thankful">Thankful</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label>Language:</label>
+                    <select id="language">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Generate Button -->
+            <button id="generateBtn" class="generate-btn">
+                ✨ Generate Response
+            </button>
+
+            <!-- Output Section -->
+            <div class="output-section" id="outputSection">
+                <label>Your Response:</label>
+                <textarea id="responseOutput" readonly placeholder="Your AI-generated response will appear here..."></textarea>
+                <button id="copyBtn" class="copy-btn">📋 Copy Response</button>
+            </div>
+
+            <!-- Usage Counter -->
+            <div class="usage-counter">
+                <span id="usageCount">10</span>/10 free replies left today
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <h2>Why Choose ReplyGenius?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="icon">⚡</span>
+                <h3>Instant Replies</h3>
+                <p>Generate responses in seconds</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">🎯</span>
+                <h3>Multiple Tones</h3>
+                <p>Professional, friendly, apologetic</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">🌍</span>
+                <h3>5 Languages</h3>
+                <p>Reach global customers</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">💼</span>
+                <h3>Business Focused</h3>
+                <p>Made for real businesses</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <h2>Simple Pricing</h2>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Free</h3>
+                <div class="price">$0</div>
+                <ul>
+                    <li>✅ 10 replies/day</li>
+                    <li>✅ 4 tones</li>
+                    <li>✅ 5 languages</li>
+                    <li>❌ Ads shown</li>
+                </ul>
+                <button class="btn-free">Current Plan</button>
+            </div>
+            <div class="price-card popular">
+                <div class="popular-tag">POPULAR</div>
+                <h3>Pro</h3>
+                <div class="price">$5<span>/month</span></div>
+                <ul>
+                    <li>✅ Unlimited replies</li>
+                    <li>✅ 6 tones</li>
+                    <li>✅ 10 languages</li>
+                    <li>✅ No ads</li>
+                </ul>
+                <button class="btn-pro">Upgrade Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 ReplyGenius. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
